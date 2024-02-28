@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(199, 146, 78);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #15381a;
+  text-align: center;
+  border: 4px solid rgb(105, 102, 102);
+  background-color: rgb(204, 216, 41);
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  font-size: 36px;
+  background-color: rgb(199, 146, 78);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@keyframes rollDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.clock-container {
+  animation: rollDown 1s ease-in-out;
+}
